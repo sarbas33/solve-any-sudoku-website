@@ -26,7 +26,12 @@ input {
     background-color: #FFFFFF;
     outline: none;
   }
-  #subm {
+  .butto {
+    width: 200px;
+    height: 50px;
+
+}
+#subm {
     width: 200px;
     height: 50px;
 
@@ -173,7 +178,20 @@ input {
           </table>
     </div>
     <div>
-      <button onclick="submitted()" id='subm'>Submit</button>
+      <button onclick="submitted()" class='butto' id='subm'>Solve</button>
+      <button onclick="clearer()" class='butto' id='clearer'>Clear All</button>
     </div>
+    <div>
+      <h2>
+        Instructions:
+      </h2>
+      <ol>
+        1. Clear the dots and input numbers from the sudoku puzzle in the corresponding cells 
+      </ol>
+      <ol>2. Leave dots in the cells where the sudoku puzzle doesn't have a value</ol>
+      <ol>3. After typing all the numbers from the sudoku puzzle, click on 'Solve' button. Solution for the puzzle will be displayed</ol>
+      <ol>4. Click on 'Clear' button to solve another sudoku puzzle</ol>
+    </div>
+
 </body>
 </html>
